@@ -14,7 +14,7 @@ import kotlin.jvm.optionals.getOrNull
  * @param repository The JPA repository for Cart entities.
  */
 @Component
-class SqlCartRepositoryAdapter(
+class JpaCartRepositoryAdapter(
     private val repository: IJpaCartRepository
 ) : CartRepository {
     override fun findAll(): List<Cart> {

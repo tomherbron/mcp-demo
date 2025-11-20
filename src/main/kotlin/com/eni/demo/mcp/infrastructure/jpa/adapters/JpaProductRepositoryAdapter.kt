@@ -14,7 +14,7 @@ import kotlin.jvm.optionals.getOrNull
  * @param repository The JPA repository for Product entities.
  */
 @Component
-class SqlProductRepositoryAdapter(
+class JpaProductRepositoryAdapter(
     private val repository: IJpaProductRepository
 ) : ProductRepository {
     override fun findAll(): List<Product> {
